@@ -55,7 +55,7 @@ Template Name: Homepage
 		<div class="u-gridContainer">
 			<div class="Content u-gridColumn12">
 			<h5>Graag willen wij je welkom heten op onze site. Op deze site zullen wij je zo uitgebreid mogelijk informeren over de activiteiten van Rijschool Compleet.
-				Rijschool Compleet is een rijschool met 10 jaar ervaring in het geven van 
+				Rijschool Compleet is een rijschool met ruim 14 jaar ervaring in het geven van 
 				autorijlessen, autorijlessen met aanhangwagen en motorrijlessen.</h5>
 					</div>
 				</article>
