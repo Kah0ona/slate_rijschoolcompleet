@@ -81,10 +81,11 @@ $nav-breakpoint: 769px;
   font-family: $t-headerFontFamily;
   color: $c-white;
   letter-spacing:2px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.5;  
   font-weight: 600;
   text-transform: uppercase;
+  word-spacing: 1em;
 
   cursor: pointer;
   -webkit-duration: .3s;
@@ -98,6 +99,7 @@ $nav-breakpoint: 769px;
    }
   @media screen and (max-width: 980px) {
     font-size: 13px;
+    width: 22.6em;
   }
 
 
@@ -150,6 +152,8 @@ a.Navigation-link{
   z-index: 99999;
   position: absolute;
   border: 0;
+
+
 
   .Navigation-listItem{
     border: 0;

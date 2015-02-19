@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="u-gridRow Content-yellow">
+<div class="u-gridRow Content">
 		<div class="u-gridContainer">
 			<div class="u-gridColumn6">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

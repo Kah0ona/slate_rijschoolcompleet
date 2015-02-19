@@ -20,14 +20,14 @@
 
 .Slider-slogan {
 	position: absolute;
-	bottom: 10%; 
+	bottom: 10%;   
 	// right: 0px;
-	// padding-right: 7 %;
+	// padding-right: 7d %;
 	// padding-left: 20px;
-	background-color: rgba($c-purple, 0.6);
-		@media screen and(max-width: 600px){
-			background-color: rgba($c-purple, 0.4);
-		} 
+	// background-color: rgba($c-purple, 0.6);
+	// 	@media screen and(max-width: 600px){
+	// 		background-color: rgba($c-purple, 0.4);
+	// 	} 
 
 	width: 100%;	
 	text-align: center;
@@ -68,7 +68,11 @@
 	padding: 0;
 	font-size: 18px;
 	// background-color: rgba($c-purple, 0.9);
-	background-color: $c-purple;
+	// 	@media screen and(max-width: 600px){
+	// 		background-color: rgba($c-purple, 0.4);
+	// 	} 
+	background-color: rgba($c-purple, 0.6);
+	// background-color: $c-purple;
 	@media screen and(max-width: 600px){
 		font-size: rem(14px);
 	}			
@@ -89,7 +93,7 @@
 }
 
 .Slider-link{
-	color: $c-white;
+	color: $c-brightyellow;
 	font-size: 22px;
 	@media screen and(max-width: 600px){
 		font-size: 10px;

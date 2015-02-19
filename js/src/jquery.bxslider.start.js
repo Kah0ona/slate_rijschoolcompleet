@@ -72,16 +72,16 @@ function renderOffer(){
 		$('.Offer-slider.bxslider').bxSlider({
 			minSlides: 1,
 			maxSlides: 1,
-			// randomStart:  'true',
 			// mode: 'vertical',
 			slideWidth: 500,
 			slideMargin: 40,
 			captions: true,
 			auto: true,
 			speed: 800,
+			// startSlide: 7,
 			//infiniteLoop: true,
 			// touchEnabled:false,
-			pause: 7000,
+			pause: 4200,
 			// preventDefaultSwipeX: true,
 			pager: false
 		});
@@ -89,8 +89,6 @@ function renderOffer(){
 	else{
 		$('.Offer-slider.bxslider').bxSlider({
 		  minSlides: 3,
-		  // randomStart:  'true',
-		  startSlide: 5,
 		  maxSlides: 3,
 		  slideWidth: 500,
 		  slideMargin: 40,
@@ -99,7 +97,7 @@ function renderOffer(){
 		  speed: 800,
 		  infiniteLoop: true,
 		  // touchEnabled:false,
-		  pause: 7000,
+		  pause: 8000,
 		  // preventDefaultSwipeX: true,
 		  pager: false
 		});

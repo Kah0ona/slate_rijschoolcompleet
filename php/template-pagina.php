@@ -10,7 +10,11 @@ Template Name: Pagina template
  
 	<div class="u-gridRow Content-wrap">
 		<div class="u-gridContainer">
-			<div class="u-gridColumn6">
+			<div class="u-gridColumn8">
+				<div class="Cbr-img">
+					<a href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2f"><img src="/files/2014/05/cbr.jpg"></img></a>
+					<a href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2f"><img src="/files/2014/05/Screen-Shot-2014-05-30-at-11.42.26.png"></img></a>
+				</div>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article class="Content-article" id="post-<?php the_ID(); ?>">
 					<?php if(!is_front_page()) { ?>
@@ -24,7 +28,7 @@ Template Name: Pagina template
 			<?php endwhile; endif; ?>
 			</div>   
 
-			<div class="Usp u-gridColumn4 ">
+			<!-- <div class="Usp u-gridColumn4 ">
 				<p>Nog even de voordelen op een rijtje:</p>
 				<ul class="Usp-list">
 					<li class="icon check"> Hoog slagingspercentage (81%-85 %)</li>
@@ -37,7 +41,7 @@ Template Name: Pagina template
 					<p class="Usp-text">'Rijopleiding In Stappen'</p>
 					<li class="icon check"> Een goede service</li>
 				</ul>
-			</div>
+			</div> -->
 
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Two column template
+Template Name: Archive template
 */
 ?>
 <?php get_header(); ?>
@@ -9,35 +9,37 @@ Template Name: Two column template
 		<div class="u-gridContainer">
 			<div class="u-gridColumn7">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article class="Content-article" id="post-<?php the_ID(); ?>">
-					<?php if(!is_front_page()) { ?>
-					<h2><?php the_title(); ?></h2>
-					<?php } ?>
-					<div>
-						<?php the_content(); ?>
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-					</div>
-				</article>
+
+			<article class="u-gridRow u-cf" id="post-<?php the_ID(); ?>">
+				<h2><?php the_title(); ?></h2>
+				<div class="Offer-thumbnail u-gridColumn3">
+					<?php the_post_thumbnail(); ?>
+				</div>
 				
-				<section class="Comments">
-				<?php if(is_page('recensies') || is_page('recensies')) { comments_template(); } ?>
-				</section>
-			<?php endwhile; endif; ?>
-			</div>  
+				<div class="Offer-archive">
+					<?php the_content(); ?>
+				</div>
+			</article>
+			<?php endwhile; else: ?>
 
-			
+				<p><?php _('Sorry, no posts matched your criteria.'); ?></p>
 
+			<?php endif; ?>
+		</div> 
+ 
 
 				
-				<div class="Usp-col u-gridColumn4 ">
-					<div>
-						<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
-					</div> 
+		<div class="Usp-col u-gridColumn4 ">
+
+			<div>
+				<a class="Button Button--registration" href="/aanmelden"><strong>Meld je nu aan</strong></a>
+			</div> 
 					<!-- <div class="Contactbar-form">
 					<?php echo do_shortcode('[gravityform id="1" name="Contact" title="false"]'); ?>
-					</div> -->
+					</div>
+				 -->
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" /></a>
-				
+				 
 				<p class="Usp-text"><strong>Nog even de voordelen op een rijtje:</strong></p>
 				<ul class="Usp-list">
 					<li class="icon check">Hoog slagingspercentage</li>
